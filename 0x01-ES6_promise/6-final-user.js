@@ -7,7 +7,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       const profilearray = [];
       result.forEach((index) => {
         if (index.status !== 'fullfilled') {
-          profilearray.push({ status: index.status, value: `Error: ${index.reason.message}`,});
+          profilearray.push({ status: index.status, value: `Error: ${index.value}`,});
         } else {
           profilearray.push({ status: index.status, value: index.value, })
         }
