@@ -1,4 +1,4 @@
-export default function guardrail() {
+export default function guardrail(mathFunction) {
   const waitlist = [];
   try {
     const value = mathFunction();
