@@ -5,11 +5,11 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
   return Promise.allSettled([ signUpUser(firstName, lastName), uploadPhoto(fileName) ])
     .then((result) => {
       const profilearray = [];
-      result.forEach((profileindex) => {
-        if (profileindex.status === 'fulfilled') {
-          profilearray.push({ status: profileindex.status, value: profileindex.value, });
+      result.forEach((index) => {
+        if (index.status === 'fulfilled') {
+          profilearray.push({ status: index.status, value: index.value, });
         } else {
-          profilearray.push({ status: profileindex.status, value: `Error: ${profileindex.reason.message}`, });
+          profilearray.push({ status: index.status, value: `Error: ${index.reason.message}`, });
         }
       });
       return profilearray;
