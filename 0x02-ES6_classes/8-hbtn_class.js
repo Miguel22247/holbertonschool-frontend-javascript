@@ -7,7 +7,7 @@ export default class HolbertonClass {
   [Symbol.toPrimitive](hint) {
 
     // casting a string
-    if (hint === 'string'){
+    if (hint === 'string') {
       return this._location;
     }
 
