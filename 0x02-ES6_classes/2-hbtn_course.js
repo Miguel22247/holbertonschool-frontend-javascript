@@ -7,15 +7,15 @@ export default class HolbertonCourse {
     }
 
     if (typeof length === 'number') {
-      throw TypeError('Length must be a number');
-    } else {
       this._length = length;
+    } else {
+      throw TypeError('Length must be a number');
     }
 
     if (!Array.isArray(students) && students.every((i) => typeof i !== 'string')) {
       throw TypeError('Students must be an array of strings');
     }
-    this._students = students;
+     this._students = students;
   }
   // getter
   get name() {
