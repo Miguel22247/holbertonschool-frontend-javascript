@@ -6,11 +6,11 @@ export default class Currency {
 
   //getter
   get code() {
-      return this._code;
+    return this._code;
   }
 
   get name() {
-      return this._name;
+    return this._name;
   }
   //setter
   set code(Code) {
@@ -21,9 +21,8 @@ export default class Currency {
     this._name = Name
   }
 
-
   //method
   displayFullCurrency() {
-      return `${this._name} ${this._code}`;
+      return `${this._name} (${this._code})`;
   }
 }
