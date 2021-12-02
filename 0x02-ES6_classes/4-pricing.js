@@ -24,7 +24,8 @@ export default class Pricing {
     this._amount = Amount;
   }
 
-  displayFUllPrice() {
-    return `${this._amount} ${this.currency.displayFUllCurrency()}`;
+  displayFullPrice() {
+    return `${this._amount} ${this.currency.displayFullCurrency()}`;
   }
+
 }
