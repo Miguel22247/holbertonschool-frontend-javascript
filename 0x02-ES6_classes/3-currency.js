@@ -1,10 +1,10 @@
 export default class Currency {
   constructor(code, name) {
-      this._code = code;
-      this._name = name;
+    this._code = code;
+    this._name = name;
   }
 
-  //getter
+  // getter
   get code() {
     return this._code;
   }
@@ -12,17 +12,18 @@ export default class Currency {
   get name() {
     return this._name;
   }
-  //setter
+
+  // setter
   set code(Code) {
-    this._code = Code
+    this._code = Code;
   }
 
   set name(Name) {
-    this._name = Name
+    this._name = Name;
   }
 
-  //method
+  // method
   displayFullCurrency() {
-      return `${this._name} (${this._code})`;
+    return `${this._name} (${this._code})`;
   }
 }
