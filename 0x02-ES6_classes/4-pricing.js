@@ -28,4 +28,8 @@ export default class Pricing {
     return `${this._amount} ${this.currency.displayFullCurrency()}`;
   }
 
+  // static that calculates amount multiplied by conversion rate
+  static convertPrice(amount, conversionRate) {
+    return amount * conversionRate;
+  }
 }
