@@ -5,10 +5,12 @@ export default class HolbertonClass {
   }
 
   [Symbol.toPrimitive](hint) {
+
     // casting a string
     if (hint === 'string'){
       return this._location;
     }
+
     // casting a number
     if (hint === 'number') {
       return this._size;
