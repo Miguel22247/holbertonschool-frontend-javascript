@@ -1,3 +1,3 @@
-export default function updateStudentGradeByCity() {
-
+export default function updateStudentGradeByCity(array, city, grade) {
+  return array
 }
