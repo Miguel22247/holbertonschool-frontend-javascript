@@ -1,3 +1,3 @@
-export default function updateUniqueItems() {
+export default function updateUniqueItems(map) {
   
 }
