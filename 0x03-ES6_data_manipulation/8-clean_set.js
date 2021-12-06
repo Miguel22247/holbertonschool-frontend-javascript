@@ -1,4 +1,4 @@
-export default function updateUniqueItems(set, startString) {
+export default function cleanSet(set, startString) {
   let res = '';
   if (!startString || !startString.length) {
       return res;
