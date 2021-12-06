@@ -7,12 +7,12 @@ export default function getListStudents() {
     },
     {
       "id": "2",
-      "firstName": "Guillaume",
-      "location": "San Francisco"
+      "firstName": "James",
+      "location": "Columbia"
     },
     {
       "id": "5",
-      "firstName": "Guillaume",
+      "firstName": "Serena",
       "location": "San Francisco"
     },
   ]
