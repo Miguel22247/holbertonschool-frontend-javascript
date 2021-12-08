@@ -51,4 +51,10 @@ function IsDirector(employee: Director | Teacher): employee is Director {
 	return (employee instanceof Director) ? true: false;
 }
 
-function 
+//function executeWork
+function executeWork (employee: Director | Teacher): string {
+	return IsDirector(employee) ? employee.workDirectorTasks() : employee.workTeacherTasks();
+}
+
+console.log(executeWork(createEmployee('Guillaume', 'Salva', 200)));
+console.log(executeWork(createEmployee('Julien', 'Barbier', 1000)));
