@@ -6,22 +6,21 @@ interface Student {
   location: string;
 }
 
-const studentA : Student = {
+const student1 : Student = {
   firstName: 'Miguel',
   lastName: 'Pacheco',
   age: 19,
   location: 'Uruguay',
 }
 
-const studentB : Student = {
+const student2 : Student = {
   firstName: 'Javier',
   lastName: 'Valenzani',
   age: 28,
   location: 'Earth',
 }
 
-const studentList = [studentA, studentB];
-
+const studentList = [student1, student2];
 const table = document.createElement('table');
 const tbody = document.createElement('tbody');
 
