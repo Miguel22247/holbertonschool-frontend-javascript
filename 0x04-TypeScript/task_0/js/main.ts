@@ -1,5 +1,4 @@
-
-
+//Teacher interface
 interface Student {
   firstName: string;
   lastName: string;
